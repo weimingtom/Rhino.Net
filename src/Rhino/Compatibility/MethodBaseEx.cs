@@ -13,7 +13,16 @@ namespace Rhino
 
 		public static bool IsAnnotationPresent(this MethodBase method, Type attributeType)
 		{
-			return method.GetCustomAttributes(attributeType).Any();
+			bool result = false;
+			foreach (Attribute attr in method.GetCustomAttributes(true)) 
+			{
+                if (attr.GetType() == attributeType)
+                {
+            		result = true;
+            		break;
+                }
+			}
+			return result;
 		}
 
 		public static object NewInstance(this ConstructorInfo constructor, params object[] parameters)

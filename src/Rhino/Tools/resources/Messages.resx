@@ -1,5 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -58,35 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data xml:space="preserve" name="msg.expected.string.arg">
+  <data name="msg.expected.string.arg" xml:space="preserve">
     <value>Expected a string argument.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.class.not.found">
+  <data name="msg.class.not.found" xml:space="preserve">
     <value>Class "{0}" not found.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.couldnt.open">
+  <data name="msg.couldnt.open" xml:space="preserve">
     <value>Couldn''t open file "{0}".</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.couldnt.open.url">
+  <data name="msg.couldnt.open.url" xml:space="preserve">
     <value>Couldn''t open URL "{0}": {1}.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.couldnt.read.source">
+  <data name="msg.couldnt.read.source" xml:space="preserve">
     <value>Couldn''t read source file "{0}": {1}.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.no-opt">
+  <data name="msg.no-opt" xml:space="preserve">
     <value>Must have the org.mozilla.javascript.optimizer package available to compile to class files.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.invalid">
+  <data name="msg.shell.invalid" xml:space="preserve">
     <value>Invalid option "{0}"</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.usage">
+  <data name="msg.shell.usage" xml:space="preserve">
     <value>Usage: java {0} [options...] [files]
 Valid options are:
     -?, -help          Displays help messages.
@@ -104,9 +156,8 @@ Valid options are:
     -strict            Enable strict mode warnings.
     -fatal-warnings    Treat warnings as errors.
     -encoding charset  Use specified character encoding as default when reading scripts.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.help">
+  <data name="msg.help" xml:space="preserve">
     <value>
 Command                Description 
 =======                =========== 
@@ -141,38 +192,30 @@ serialize(obj, fileName)
 deserialize(fileName)  Reconstructs a serialized object 
 environment            Returns the current environment object 
 history                Displays the shell command history</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.warning">
+  <data name="msg.warning" xml:space="preserve">
     <value>warning: {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.format1">
+  <data name="msg.format1" xml:space="preserve">
     <value>{0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.format2">
+  <data name="msg.format2" xml:space="preserve">
     <value>line {0}: {1}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.format3">
+  <data name="msg.format3" xml:space="preserve">
     <value>"{0}", line {1}: {2}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.uncaughtJSException">
+  <data name="msg.uncaughtJSException" xml:space="preserve">
     <value>exception from uncaught JavaScript throw: {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.uncaughtEcmaError">
+  <data name="msg.uncaughtEcmaError" xml:space="preserve">
     <value>uncaught JavaScript runtime exception: {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.jsc.bad.usage">
+  <data name="msg.jsc.bad.usage" xml:space="preserve">
     <value>Didn''t understand "{1}". 
 For more information, try java {0} -h</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.jsc.usage">
+  <data name="msg.jsc.usage" xml:space="preserve">
     <value>Usage: java {0} [OPTION]... SOURCE...
 Valid options are: 
   -version VERSION   Use the specified language version.
@@ -206,123 +249,94 @@ Valid options are:
                        Context.setInstructionObserverThreshold. 
   -help, --help, -h  Print this help and exit.
 </value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.no.file">
+  <data name="msg.no.file" xml:space="preserve">
     <value>A file name must be specified to compile.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.invalid.classfile.name">
+  <data name="msg.invalid.classfile.name" xml:space="preserve">
     <value>File "{0}" is not a valid class file name.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.extension.not.js">
+  <data name="msg.extension.not.js" xml:space="preserve">
     <value>File "{0}" is not a valid js file name.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.jsfile.not.found">
+  <data name="msg.jsfile.not.found" xml:space="preserve">
     <value>File "{0}" not found.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.multiple.js.to.file">
+  <data name="msg.multiple.js.to.file" xml:space="preserve">
     <value>Cannot compile multiple js files to "{0}".</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.package.name">
+  <data name="msg.package.name" xml:space="preserve">
     <value>"{0}" is not a valid package name.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.spawn.args">
+  <data name="msg.spawn.args" xml:space="preserve">
     <value>Argument to spawn() must be a function or script.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.must.implement.Script">
+  <data name="msg.must.implement.Script" xml:space="preserve">
     <value>Argument to loadClass() must be the name of a class that implements the Script interface. Class files generated by compiling scripts will implement Script.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.must.implement.Scriptable">
+  <data name="msg.must.implement.Scriptable" xml:space="preserve">
     <value>Argument to defineClass() must be the name of a class that implements the Scriptable interface.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.runCommand.bad.args">
+  <data name="msg.runCommand.bad.args" xml:space="preserve">
     <value>The first argument to runCommand must be a command name.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.runCommand.bad.env">
+  <data name="msg.runCommand.bad.env" xml:space="preserve">
     <value>A value of the env property of option object for runCommnad must be an object.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.seal.not.object">
+  <data name="msg.shell.seal.not.object" xml:space="preserve">
     <value>seal function can only be applied to objects</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.seal.not.scriptable">
+  <data name="msg.shell.seal.not.scriptable" xml:space="preserve">
     <value>seal function supports only sealing of ScriptableObject instances</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.readFile.bad.args">
+  <data name="msg.shell.readFile.bad.args" xml:space="preserve">
     <value>readFile require at least file path to be specified</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.readUrl.bad.args">
+  <data name="msg.shell.readUrl.bad.args" xml:space="preserve">
     <value>readUrl require at least file path to be specified</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.shell.bad.function.scope">
+  <data name="msg.shell.bad.function.scope" xml:space="preserve">
     <value>Wrong scope object for shell function: {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.same_string">
+  <data name="msg.idswitch.same_string" xml:space="preserve">
     <value>The string {0} is used second time in the switch code. Previous occurrence was at line {1}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.file_end_in_switch">
+  <data name="msg.idswitch.file_end_in_switch" xml:space="preserve">
     <value>End of file inside tag {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.bad_tag_order">
+  <data name="msg.idswitch.bad_tag_order" xml:space="preserve">
     <value>String switch tag {0} is not allowed here</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.no_end_with_value">
+  <data name="msg.idswitch.no_end_with_value" xml:space="preserve">
     <value>End for tag {0} can not contain value</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.no_value_allowed">
+  <data name="msg.idswitch.no_value_allowed" xml:space="preserve">
     <value>Tag {0} can not contain value</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.no_end_usage">
+  <data name="msg.idswitch.no_end_usage" xml:space="preserve">
     <value>Tag {0} can not be used as end tag</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.no_file_argument">
+  <data name="msg.idswitch.no_file_argument" xml:space="preserve">
     <value>File argument should be given</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.too_many_arguments">
+  <data name="msg.idswitch.too_many_arguments" xml:space="preserve">
     <value>Too many arguments are given</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.bad_option">
+  <data name="msg.idswitch.bad_option" xml:space="preserve">
     <value>Invalid option {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.bad_option_char">
+  <data name="msg.idswitch.bad_option_char" xml:space="preserve">
     <value>Invalid option letter {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.bad_invocation">
+  <data name="msg.idswitch.bad_invocation" xml:space="preserve">
     <value>StringIdMap: {0}
 For more information, try
 java org.mozilla.javascript.tools.idswitch.StringIdMap --help</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.io_error">
+  <data name="msg.idswitch.io_error" xml:space="preserve">
     <value>StringIdMap: IO error, {0}</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.usage">
+  <data name="msg.idswitch.usage" xml:space="preserve">
     <value>Usage: java org.mozilla.javascript.tools.idswitch.StringIdMap [OPTIONS] JAVA_SOURCE_FILE
 Generates efficient string dispatch code in JAVA_SOURCE_FILE.
 The resulting Java source fragment replaces the old dispatch code.
@@ -334,10 +348,8 @@ result is sent to standard output.
 
 Note: the original file will be overwritten without any backup actions
       and all code inside #generated# tag will be replaced by new one.</value>
-    <comment></comment>
   </data>
-  <data xml:space="preserve" name="msg.idswitch.version">
+  <data name="msg.idswitch.version" xml:space="preserve">
     <value>org.mozilla.javascript.tools.idswitch.StringIdMap version 0.2</value>
-    <comment></comment>
   </data>
 </root>

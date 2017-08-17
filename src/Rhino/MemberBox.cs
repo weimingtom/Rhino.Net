@@ -374,8 +374,17 @@ outer_break: ;
 		{
 			foreach (ParameterInfo parameterInfo in member.GetParameters().Reverse())
 			{
-				var attributes = parameterInfo.GetCustomAttributes(typeof (ParamArrayAttribute));
-				return attributes != null && attributes.Any();
+				//var attributes = parameterInfo.GetCustomAttributes(typeof (ParamArrayAttribute));
+				//return attributes != null && attributes.Any();
+				
+				var attributes = parameterInfo.GetCustomAttributes(true);
+                foreach (Attribute attr in attributes) 
+                {
+                	 if (attr.GetType() == typeof(ParamArrayAttribute))
+                	 {
+                	 	return attributes != null && attributes.Any();
+                	 }
+                }
 			}
 			return false;
 		}

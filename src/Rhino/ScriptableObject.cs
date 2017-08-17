@@ -1594,19 +1594,40 @@ namespace Rhino
 				string prefix = null;
 				if (method_1.IsAnnotationPresent(typeof(JSFunction)))
 				{
-					annotation = method_1.GetCustomAttribute<JSFunction>();
+					foreach (Attribute attr in method_1.GetCustomAttributes(true)) 
+					{
+                        if (attr.GetType() == typeof(JSFunction))
+                        {
+                    		annotation = attr;
+                    		break;
+                        }
+					}
 				}
 				else
 				{
 					if (method_1.IsAnnotationPresent(typeof(JSStaticFunction)))
 					{
-						annotation = method_1.GetCustomAttribute<JSStaticFunction>();
+						foreach (Attribute attr in method_1.GetCustomAttributes(true)) 
+						{
+	                        if (attr.GetType() == typeof(JSStaticFunction))
+	                        {
+	                    		annotation = attr;
+	                    		break;
+	                        }
+						}
 					}
 					else
 					{
 						if (method_1.IsAnnotationPresent(typeof(JSGetter)))
 						{
-							annotation = method_1.GetCustomAttribute<JSGetter>();
+							foreach (Attribute attr in method_1.GetCustomAttributes(true)) 
+							{
+		                        if (attr.GetType() == typeof(JSGetter))
+		                        {
+		                    		annotation = attr;
+		                    		break;
+		                        }
+							}
 						}
 						else
 						{
@@ -1718,7 +1739,15 @@ namespace Rhino
 			string newStyleName = "set" + Char.ToUpper(name[0]) + name.Substring(1);
 			foreach (MethodInfo method in methods)
 			{
-				JSSetter annotation = method.GetCustomAttribute<JSSetter>();
+				JSSetter annotation = null;
+				foreach (Attribute attr in method.GetCustomAttributes(true)) 
+				{
+					if (attr.GetType() == typeof(JSSetter))
+	                {
+						annotation = (JSSetter)attr;
+	            		break;
+	                }
+				}
 				if (annotation != null)
 				{
 					if (name.Equals(annotation.Value) || (string.Empty.Equals(annotation.Value) && newStyleName.Equals(method.Name)))

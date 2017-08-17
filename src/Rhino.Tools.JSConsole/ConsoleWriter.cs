@@ -51,12 +51,18 @@ namespace Rhino.Tools.JsConsole
 		{
 			Flush();
 		}
+		
+		private delegate void FlushBufferDelegate(string str);
+		private void FlushBuffer_delegate(string str)
+		{
+			textArea.Write(str);
+		}
 
 		private void FlushBuffer()
 		{
 			string str = buffer.ToString();
 			buffer.Length = 0;
-			Application.Current.Dispatcher.Invoke(() => textArea.Write(str));
+			Application.Current.Dispatcher.Invoke(new FlushBufferDelegate(FlushBuffer_delegate), str);
 		}
 	}
 }

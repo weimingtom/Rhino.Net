@@ -4,6 +4,3 @@
 [submodule "reference/sharpen"]
 	path = reference/sharpen
 	url = https://github.com/hazzik/sharpen.git
-[submodule "src/Sharpen"]
-	path = src/Sharpen
-	url = https://github.com/hazzik/Sharpen.Runtime.git

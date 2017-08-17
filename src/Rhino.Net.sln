@@ -1,6 +1,12 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C51D6AE1-9AD1-41A7-BD5B-5C584FA16649}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpen", "Sharpen\Sharpen\Sharpen.csproj", "{72944A6C-45FF-4EF8-B349-8C9CABF519D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino", "Rhino\Rhino.csproj", "{FFA067FA-EB0F-4B26-92FF-76D435D1F690}"
@@ -12,15 +18,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Tools.IdSwitch", "Rhino.Tools.IdSwitch\Rhino.Tools.IdSwitch.csproj", "{8EE080DE-D1FE-4E3D-9C95-9820A062D0E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Tools.JsConsole", "Rhino.Tools.JSConsole\Rhino.Tools.JsConsole.csproj", "{F587D0D4-EB39-4742-B656-DC1C4BBD6AA3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Tests", "Rhino.Tests\Rhino.Tests.csproj", "{59DBBB80-3651-484E-AB48-BD33A9776C1D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C51D6AE1-9AD1-41A7-BD5B-5C584FA16649}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhino.Tools.Debugger", "Rhino.Tools.Debugger\Rhino.Tools.Debugger.csproj", "{D693B419-B3E7-47FA-851A-A66C493426E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,18 +62,6 @@ Global
 		{F587D0D4-EB39-4742-B656-DC1C4BBD6AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F587D0D4-EB39-4742-B656-DC1C4BBD6AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F587D0D4-EB39-4742-B656-DC1C4BBD6AA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59DBBB80-3651-484E-AB48-BD33A9776C1D}.AllFeatures|Any CPU.ActiveCfg = AllFeatures|Any CPU
-		{59DBBB80-3651-484E-AB48-BD33A9776C1D}.AllFeatures|Any CPU.Build.0 = AllFeatures|Any CPU
-		{59DBBB80-3651-484E-AB48-BD33A9776C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59DBBB80-3651-484E-AB48-BD33A9776C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59DBBB80-3651-484E-AB48-BD33A9776C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59DBBB80-3651-484E-AB48-BD33A9776C1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D693B419-B3E7-47FA-851A-A66C493426E9}.AllFeatures|Any CPU.ActiveCfg = Release|Any CPU
-		{D693B419-B3E7-47FA-851A-A66C493426E9}.AllFeatures|Any CPU.Build.0 = Release|Any CPU
-		{D693B419-B3E7-47FA-851A-A66C493426E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D693B419-B3E7-47FA-851A-A66C493426E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D693B419-B3E7-47FA-851A-A66C493426E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D693B419-B3E7-47FA-851A-A66C493426E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
